@@ -1,0 +1,4 @@
+baidu_aip==4.16.11
+PyAudio==0.2.14
+pywin32==309
+websocket_client==1.7.0
