@@ -193,10 +193,10 @@ def Run_Talk(APP_ID,API_KEY,SECRET_KEY,file_path):
                         }
                         number = int(number_str) if number_str and number_str.isdigit() else num_map.get(number_str, 1)
                         delete_ingredient_from_history(ingredient, number)
-                        print("已删除食材：", ingredient, number)
+                        print("已删除食材：", number,ingredient)
                     else:
                         print("未识别具体食材，无法删除")
-                    return
+
 
                 add_keywords = ["放进", "买", "放入", "放", "存","存入","拿进","拿入","放进了", "买了", "放入了", "放了", "存了","存入了","拿进了","拿入了"]
                 if any(k in text for k in add_keywords):
