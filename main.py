@@ -137,7 +137,7 @@ def Run_Talk(APP_ID,API_KEY,SECRET_KEY,file_path):
     while x:
         wk.record_sound(2)
         chat_message = wk.voice2text()
-        print(chat_message)
+        if chat_message != '' : print(chat_message)
         if len(chat_message) > 0 and chat_message[0] == '你好':
             wk.del_file()
             print('我在，请问有何吩咐')
